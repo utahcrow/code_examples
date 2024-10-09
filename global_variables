@@ -1,0 +1,22 @@
+/*
+ * @author:  Crow
+ * @date:  9-October-2024
+ * @version:  1.0
+ *
+ * @brief
+ * This is a simple program to show how a global variable interacts.
+ *
+ */
+
+#include <stdio.h>
+
+// This is our global variable
+int a = 0;
+
+int main(void) {
+  printf("Value of a = %d\n", a); // Display our default value
+  a = 1; //Change our global value from within the main function
+  printf("Value of a = %d\n", a); // Confirms that the global variable was changed
+
+  return 0;
+}
